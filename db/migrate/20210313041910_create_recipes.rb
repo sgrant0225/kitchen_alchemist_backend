@@ -1,9 +1,9 @@
-class CreateUses < ActiveRecord::Migration[6.0]
+class CreateRecipes < ActiveRecord::Migration[6.0]
   def change
-    create_table :uses do |t|
+    create_table :recipes do |t|
       t.string :title
       t.string :ingredients
-      t.string :recipe
+      t.string :instructions
       t.integer :item_id
       t.timestamps
     end

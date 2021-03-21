@@ -22,10 +22,10 @@ ActiveRecord::Schema.define(version: 2021_03_13_041910) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "uses", force: :cascade do |t|
+  create_table "recipes", force: :cascade do |t|
     t.string "title"
     t.string "ingredients"
-    t.string "recipe"
+    t.string "instructions"
     t.integer "item_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

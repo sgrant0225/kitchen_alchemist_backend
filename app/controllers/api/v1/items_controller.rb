@@ -9,11 +9,7 @@ class Api::V1::ItemsController < ApplicationController
    item = Item.find(params[:id])
    render json: item
   end  
- 
-  private
 
-  def items_params
-    params.permit(:name, :benefits)
-  end  
+  
 
 end
